@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+:root{
+    --color-background: #F2E6D8;
+    --font-body: "Mina", sans-serif;
+    --color-btn-remove: #BF0426;
+    --color-footer: #BF9B6F;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+}
+a{
+    color: #000000;
+    text-decoration:none;
+}
+.container {
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Title{
+    font-size: 2.5em; 
+    text-align: center;
+}
+#second_title{
+    font-size: 2.2em; 
+    text-transform: capitalize;
+}
+#container_adicionar {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#inserir{
+    width: 500px;
+    font-size: 20px;
+}
+#btnAdd{
+    border: none;
+    background-color: green;
+    color: #ffffff;
+    box-shadow: 1px 1px 0 .5px rgb(0, 0, 0);
+    cursor: pointer;
+    transition: box-shadow .3s ease, transform .3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5px;
+}
+#inserir, #btnAdd{
+    height: 40px;
+    padding: 5px;
+}
+#btnAdd:active{
+    box-shadow: 0 0 0 0 rgb(0, 0, 0), inset 2px 2px 2px black;
+    transform: translate(2px 2px);
+}
+
+/*Itens da Lista*/
+.container_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container_list{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.item_list{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.btnRemove{
+    margin-left: 5px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-btn-remove);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 0 .5px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    background-color: var(--color-footer); /* Adicione uma cor de fundo ao footer para distingui-lo do conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -1px 1px 1px 0px #000000;
+    font-size: 15px;
+}
+footer > p {
+    margin-bottom: 10px;
+}
+#social-media{
+    list-style: none;
+}
+#social-media > li > a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/listaDeTarefas.css">
+</head>
+<body>
+    <article class="container">
+        <div id="Title">
+            <h1>Lista de Tarefas</h1>
+        </div>
+        <form action="GET" id="form" autocomplete="off">
+            <div id="container_adicionar">
+                <input type="text" name="inserir" id="inserir" placeholder="Digite uma tarefa">
+                <button type="submit" id="btnAdd">&#43 Adicionar</button>
+            </div>
+        </form>
+        <div class="container_list">
+            <h2 id="second_title">tarefas pendentes:</h2>
+            <ul class="lista_tarefas"></ul>
+        </div>
+    </article>
+    <footer>
+        <p>Created by Leonardo Lindoso</p>
+        <ul id="social-media">
+            <li><a href="https://github.com/leolindosodev" target="_blank" rel="external"> GitHub </a></li>
+            <li><a href="https://www.linkedin.com/in/leolindosodev/" target="_blank" rel="external"> LinkedIn </a></li>
+        </ul>
+    </footer>
+    <script src="../js/listaDeTarefas.js"></script>
+</body>
+</html>
