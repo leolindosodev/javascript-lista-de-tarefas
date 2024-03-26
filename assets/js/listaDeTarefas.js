@@ -10,8 +10,8 @@ form.addEventListener("submit", (e) => {
         return
     }
 
-    const novoLi = document.createElement('li');// Primeiro o pai
-    const btnRm = document.createElement('input'); // Filho
+    const novoLi = document.createElement('li');
+    const btnRm = document.createElement('input');
 
 
     novoLi.className = 'item_list';

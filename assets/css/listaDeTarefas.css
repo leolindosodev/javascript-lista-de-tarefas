@@ -106,7 +106,7 @@ footer{
     bottom: 0;
     width: 100%;
     margin-top: 100px;
-    background-color: var(--color-footer); /* Adicione uma cor de fundo ao footer para distingui-lo do conteúdo */
+    background-color: var(--color-footer);
     display: flex;
     flex-direction: column;
     justify-content: center;
